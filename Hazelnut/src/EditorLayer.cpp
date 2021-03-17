@@ -330,7 +330,6 @@ namespace Hazel {
 
 				break;
 			}
-
 			// Gizmos
 			case Key::Q:
 			{
@@ -356,7 +355,10 @@ namespace Hazel {
 					m_GizmoType = ImGuizmo::OPERATION::SCALE;
 				break;
 			}
+			default:
+				return false;
 		}
+		return true;
 	}
 
 	void EditorLayer::NewScene()
