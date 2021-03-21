@@ -1,18 +1,18 @@
 [submodule "Engine/dependencies/spdlog"]
 	path = Engine/dependencies/spdlog
-	url = ../../gabime/spdlog.git
+	url = https://github.com/gabime/spdlog.git
 	branch = v1.x
 [submodule "Engine/dependencies/GLFW"]
 	path = Engine/dependencies/GLFW
-	url = ../../TheCherno/glfw.git
+	url = https://github.com/TheCherno/glfw.git
 	branch = master
 [submodule "Engine/dependencies/imgui"]
 	path = Engine/dependencies/imgui
-	url = ../../TheCherno/imgui.git
+	url = https://github.com/TheCherno/imgui.git
 	branch = docking
 [submodule "Engine/dependencies/glm"]
 	path = Engine/dependencies/glm
-	url = ../../g-truc/glm.git
+	url = https://github.com/g-truc/glm.git
 	branch = master
 [submodule "Engine/dependencies/yaml-cpp"]
 	path = Engine/dependencies/yaml-cpp
