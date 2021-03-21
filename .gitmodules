@@ -1,22 +1,22 @@
-[submodule "Hazel/depencies/spdlog"]
-	path = Hazel/depencies/spdlog
+[submodule "Engine/dependencies/spdlog"]
+	path = Engine/dependencies/spdlog
 	url = ../../gabime/spdlog.git
 	branch = v1.x
-[submodule "Hazel/depencies/GLFW"]
-	path = Hazel/depencies/GLFW
+[submodule "Engine/dependencies/GLFW"]
+	path = Engine/dependencies/GLFW
 	url = ../../TheCherno/glfw.git
 	branch = master
-[submodule "Hazel/depencies/imgui"]
-	path = Hazel/depencies/imgui
+[submodule "Engine/dependencies/imgui"]
+	path = Engine/dependencies/imgui
 	url = ../../TheCherno/imgui.git
 	branch = docking
-[submodule "Hazel/depencies/glm"]
-	path = Hazel/depencies/glm
+[submodule "Engine/dependencies/glm"]
+	path = Engine/dependencies/glm
 	url = ../../g-truc/glm.git
 	branch = master
-[submodule "Hazel/depencies/yaml-cpp"]
-	path = Hazel/depencies/yaml-cpp
+[submodule "Engine/dependencies/yaml-cpp"]
+	path = Engine/dependencies/yaml-cpp
 	url = https://github.com/thecherno/yaml-cpp
-[submodule "Hazel/depencies/ImGuizmo"]
-	path = Hazel/depencies/ImGuizmo
+[submodule "Engine/dependencies/ImGuizmo"]
+	path = Engine/dependencies/ImGuizmo
 	url = https://github.com/thecherno/imguizmo
