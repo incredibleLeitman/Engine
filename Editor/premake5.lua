@@ -16,8 +16,7 @@ project "Editor"
 	includedirs
 	{
 		"%{wks.location}/Engine/src",
-		"%{wks.location}/Engine/vendor",
-        --"%{wks.location}/Engine/vendor/spdlog/include",
+		"%{wks.location}/Engine/dependencies",
         "%{IncludeDir.spdlog}",
 		"%{IncludeDir.glm}",
 		"%{IncludeDir.entt}",

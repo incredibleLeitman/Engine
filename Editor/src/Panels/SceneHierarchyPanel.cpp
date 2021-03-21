@@ -214,7 +214,10 @@ namespace Engine {
 
 			char buffer[256];
 			memset(buffer, 0, sizeof(buffer));
+		#pragma warning( push )
+		#pragma warning( disable:4996 )
 			std::strncpy(buffer, tag.c_str(), sizeof(buffer));
+		#pragma warning( pop )
 			if (ImGui::InputText("##Tag", buffer, sizeof(buffer)))
 			{
 				tag = std::string(buffer);

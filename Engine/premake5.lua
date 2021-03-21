@@ -14,12 +14,12 @@ project "Engine"
 	{
 		"src/**.h",
 		"src/**.cpp",
-		"vendor/stb_image/**.h",
-		"vendor/stb_image/**.cpp",
-		"vendor/glm/glm/**.hpp",
-		"vendor/glm/glm/**.inl",
-		"vendor/ImGuizmo/ImGuizmo.h",
-		"vendor/ImGuizmo/ImGuizmo.cpp"
+		"dependencies/stb_image/**.h",
+		"dependencies/stb_image/**.cpp",
+		"dependencies/glm/glm/**.hpp",
+		"dependencies/glm/glm/**.inl",
+		"dependencies/ImGuizmo/ImGuizmo.h",
+		"dependencies/ImGuizmo/ImGuizmo.cpp"
 	}
 
 	defines
@@ -39,7 +39,6 @@ project "Engine"
 		"%{IncludeDir.entt}",
 		"%{IncludeDir.yaml_cpp}",
 		"%{IncludeDir.ImGuizmo}",
-        --"vendor/spdlog/include",
         "%{IncludeDir.spdlog}"
 	}
 
@@ -52,7 +51,7 @@ project "Engine"
 		"opengl32.lib"
 	}
 
-	filter "files:vendor/ImGuizmo/**.cpp"
+	filter "files:dependencies/ImGuizmo/**.cpp"
 	flags { "NoPCH" }
 
 	filter "system:windows"
