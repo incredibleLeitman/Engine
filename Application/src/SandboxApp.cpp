@@ -9,7 +9,7 @@ class Sandbox : public Engine::Application
 public:
 	Sandbox()
 	{
-		HZ_CORE_TRACE("adding example layer...");
+		LOG_CORE_TRACE("adding example layer...");
 		PushLayer(new ExampleLayer());
 		//PushLayer(new Sandbox2D());
 	}

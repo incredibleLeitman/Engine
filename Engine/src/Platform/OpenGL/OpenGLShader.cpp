@@ -71,12 +71,12 @@ namespace Engine {
 			}
 			else
 			{
-				HZ_CORE_ERROR("Could not read from file '{0}'", filepath);
+				LOG_CORE_ERROR("Could not read from file '{0}'", filepath);
 			}
 		}
 		else
 		{
-			HZ_CORE_ERROR("Could not open file '{0}'", filepath);
+			LOG_CORE_ERROR("Could not open file '{0}'", filepath);
 		}
 
 		return result;
@@ -141,7 +141,7 @@ namespace Engine {
 
 				glDeleteShader(shader);
 
-				HZ_CORE_ERROR("{0}", infoLog.data());
+				LOG_CORE_ERROR("{0}", infoLog.data());
 				HZ_CORE_ASSERT(false, "Shader compilation failure!");
 				break;
 			}
@@ -173,7 +173,7 @@ namespace Engine {
 			for (auto id : glShaderIDs)
 				glDeleteShader(id);
 
-			HZ_CORE_ERROR("{0}", infoLog.data());
+			LOG_CORE_ERROR("{0}", infoLog.data());
 			HZ_CORE_ASSERT(false, "Shader link failure!");
 			return;
 		}

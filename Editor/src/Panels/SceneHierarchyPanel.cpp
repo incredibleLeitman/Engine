@@ -237,7 +237,7 @@ namespace Engine {
 					if (!m_SelectionContext.HasComponent<CameraComponent>())
 						m_SelectionContext.AddComponent<CameraComponent>();
 					else
-						HZ_CORE_WARN("This entity already has the Camera Component!");
+						LOG_CORE_WARN("This entity already has the Camera Component!");
 					ImGui::CloseCurrentPopup();
 				}
 
@@ -246,7 +246,7 @@ namespace Engine {
 					if (!m_SelectionContext.HasComponent<SpriteRendererComponent>())
 						m_SelectionContext.AddComponent<SpriteRendererComponent>();
 					else
-						HZ_CORE_WARN("This entity already has the Sprite Renderer Component!");
+						LOG_CORE_WARN("This entity already has the Sprite Renderer Component!");
 					ImGui::CloseCurrentPopup();
 				}
 

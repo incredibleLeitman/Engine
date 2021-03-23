@@ -46,7 +46,7 @@ namespace Engine {
 				// profiling output.
 				if (Log::GetCoreLogger()) // Edge case: BeginSession() might be before Log::Init()
 				{
-					HZ_CORE_ERROR("Instrumentor::BeginSession('{0}') when session '{1}' already open.", name, m_CurrentSession->Name);
+					LOG_CORE_ERROR("Instrumentor::BeginSession('{0}') when session '{1}' already open.", name, m_CurrentSession->Name);
 				}
 				InternalEndSession();
 			}
@@ -61,7 +61,7 @@ namespace Engine {
 			{
 				if (Log::GetCoreLogger()) // Edge case: BeginSession() might be before Log::Init()
 				{
-					HZ_CORE_ERROR("Instrumentor could not open results file '{0}'.", filepath);
+					LOG_CORE_ERROR("Instrumentor could not open results file '{0}'.", filepath);
 				}
 			}
 		}
